@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (min-width: 971px){
+    /*SETOR DE NAVEGAÇÃO*/
+    .navbar{
+        display: flex;
+        flex-flow: row wrap;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        background: white;
+    }
+    .logo{
+        margin-left:10%;
+        flex: 20%;
+    }
+    .logo h1{
+        font-family: 'DM Serif Display', serif;
+        color: rgb(72, 123, 54);
+        font-size: 30px;
+    }
+    .menu{
+        flex: 60%;
+        margin-right: 10%;
+        padding: 20px;
+        text-align: right;
+    }
+    .menu a{
+        text-decoration: none;
+        color: rgb(72, 123, 54);
+        font-size: 20px;
+        margin: 5px;
+        padding: 20px 16px;
+    }
+    .menu a:hover{
+        color: rgb(166, 212, 122);
+        border-top: 4px solid rgb(72, 123, 54);
+    }
+    .menu-display{
+        display: none;
+    }
+    #contato{
+        background-color: rgb(72, 123, 54);
+        padding: 10px 25px;
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: ease 150ms;
+    }
+    #contato:hover{
+        background: rgb(166, 212, 122);
+        border: none;
+    }
+    /*SETOR DE RECEITAS*/
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+    .headline{
+        flex: 40%;
+        text-align: left;
+        margin-left: 10%;
+        padding-right: 30px;
+    }
+    .headline h2{
+        font-weight: 900;
+        text-align: left;
+        font-size: 20px;
+        color: rgb(72, 123, 54);
+        padding: 0;
+        margin: 0;
+    }
+    .headline2{
+        flex: 40%;
+        text-align: left;
+        margin-right: 10%;
+        padding-right: 30px;
+    }
+    .headline2 h2{
+        text-align: left;
+        font-weight: 900;
+        font-size: 20px;
+        color: rgb(72, 123, 54);
+        padding: 0;
+        margin: 0;
+    }
+    .headline2 p{
+        color: grey;
+        text-align: justify;
+        font-size: 15px;
+    }
+    .headline a{
+        display: inline-block;
+        background-color: rgb(166, 212, 122);
+        padding: 20px 25px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: ease 150ms;
+    }
+    .headline p{
+        color: grey;
+        text-align: justify;
+        font-size: 15px;
+    }
+    .headline a:hover{
+        background: rgb(72, 123, 54);
+        border: none;
+    }
+    section{
+        display: inline-block;
+        margin-left: 5%;
+        width: 90%;
+        margin-right: 5%;
+    }
+    section h2{
+        width: 100%;
+        font-size: 50px;
+        font-family: 'DM Serif Display', serif;
+        margin: 0;
+        font-weight: bold;
+        color: rgb(166, 212, 122);
+        text-align: center;
+        padding: 5%;
+    }
+    .projetos{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    .projetos2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-receita{
+        flex: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .img-receita img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:970px){
+    /*NAVEGAÇÃO DO SITE*/
+    .navbar{
+        display: flex;
+        flex-flow: row wrap;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        background: white;
+    }
+    .logo{
+        margin-left:10%;
+        flex: 20%;
+    }
+    .logo h1{
+        font-family: 'DM Serif Display', serif;
+        color: rgb(72, 123, 54);
+        font-size: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-display{
+        display: flex;
+        margin-right: 8%;
+        margin-left: 8%;
+        padding: 5px;
+    }
+    .menu-display a{
+        text-decoration: none;
+        color: rgb(72, 123, 54);
+        font-size: 13px;
+        margin: 2px;
+        padding: 5px 5px;
+    }
+    /*BOTÃO DE SUGESTÃO*/
+    #contato{
+        background-color: rgb(72, 123, 54);
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+    /*TÍTULO DA PÁG. E AFINS*/
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        height: 520px;
+        justify-content: center;
+        align-items: center;
+    }
+    .headline{
+        flex: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .headline h2{
+        font-weight: 900;
+        font-size: 20px;
+        color: rgb(72, 123, 54);
+        padding: 0;
+        margin: 0;
+    }
+    .headline2{
+        flex: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .headline2 h2{
+        font-weight: 900;
+        font-size: 20px;
+        color: rgb(72, 123, 54);
+        padding: 0;
+        margin: 0;
+    }
+    .img-receita{
+        flex: 80%;
+        text-align: center;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .headline p{
+        color: grey;
+        font-size: 13px;
+        text-align: justify;
+    }
+    .headline2 p{
+        color: grey;
+        font-size: 13px;
+        text-align: justify;
+    }
+    #h21{
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+    section h2{
+        width: 100%;
+        font-size: 20px;
+        font-family: 'DM Serif Display', serif;
+        margin: 0;
+        font-weight: bold;
+        color: rgb(166, 212, 122);
+        text-align: center;
+        padding: 5%;
+    }
+    .projetos2{
+        margin-bottom: 5%;
+    }
+}

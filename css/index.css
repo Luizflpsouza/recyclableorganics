@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (min-width: 971px){
+    /*NAVEGAÇÃO DO SITE*/
+    .navbar{
+        display: flex;
+        flex-flow: row wrap;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        background: white;
+    }
+    .logo{
+        margin-left:10%;
+        flex: 20%;
+    }
+    .logo h1{
+        font-family: 'DM Serif Display', serif;
+        color: rgb(72, 123, 54);
+        font-size: 30px;
+    }
+    .menu{
+        flex: 60%;
+        margin-right: 10%;
+        padding: 20px;
+        text-align: right;
+    }
+    .menu a{
+        text-decoration: none;
+        color: rgb(72, 123, 54);
+        font-size: 20px;
+        margin: 5px;
+        padding: 20px 16px;
+    }
+    .menu a:hover{
+        color: rgb(166, 212, 122);
+        border-top: 4px solid rgb(72, 123, 54);
+    }
+    /*BOTÃO DE CONTATO*/
+    #contato{
+        background-color: rgb(72, 123, 54);
+        padding: 10px 25px;
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: ease 150ms;
+    }
+    #contato:hover{
+        background: rgb(166, 212, 122);
+        border: none;
+    }
+    /*TÍTULO DA PÁG. E AFINS*/
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        height: 520px;
+        justify-content: center;
+        align-items: center;
+    }
+    .headline{
+        margin-top: 100px;
+        flex: 40%;
+        margin-left: 10%;
+    }
+    .headline h2{
+        font-weight: 900;
+        font-size: 20px;
+        color: rgb(72, 123, 54);
+        padding: 0;
+        margin: 0;
+    }
+    .img-headline{
+        margin-top: 100px;
+        flex: 40%;
+        text-align: center;
+        margin-right: 10%;
+    }
+    .headline a{
+        display: inline-block;
+        background-color: rgb(166, 212, 122);
+        padding: 20px 25px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        transition: ease 150ms;
+    }
+    .headline p{
+        color: grey;
+        text-align: justify;
+    }
+    .headline a:hover{
+        background: rgb(72, 123, 54);
+        border: none;
+    }
+}
+@media only screen and (max-width:970px){
+    /*NAVEGAÇÃO DO SITE*/
+    .navbar{
+        display: flex;
+        flex-flow: row wrap;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        background: white;
+    }
+    .logo{
+        margin-left:10%;
+        flex: 20%;
+    }
+    .logo h1{
+        font-family: 'DM Serif Display', serif;
+        color: rgb(72, 123, 54);
+        font-size: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-display{
+        display: flex;
+        margin-right: 8%;
+        margin-left: 8%;
+        padding: 5px;
+    }
+    .menu-display a{
+        text-decoration: none;
+        color: rgb(72, 123, 54);
+        font-size: 13px;
+        margin: 2px;
+        padding: 5px 5px;
+    }
+    /*BOTÃO DE SUGESTÃO*/
+    #contato{
+        background-color: rgb(72, 123, 54);
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+    /*TÍTULO DA PÁG. E AFINS*/
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        height: 520px;
+        justify-content: center;
+        align-items: center;
+    }
+    .headline{
+        flex: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .headline h2{
+        font-weight: 900;
+        font-size: 20px;
+        color: rgb(72, 123, 54);
+        padding: 0;
+        margin: 0;
+    }
+    .img-headline{
+        flex: 80%;
+        text-align: center;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .headline p{
+        color: grey;
+        font-size: 13px;
+        text-align: justify;
+    }
+    #h21{
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+}

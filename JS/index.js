@@ -7,11 +7,4 @@ function carregou(){
     } 
     , 500)
 }
-function carregou2(){
-    setTimeout(()=>{
-    site.style.display = "block";
-    carregar.style.display = "none";
-    } 
-    , 500)
-}
     
